@@ -1,38 +1,89 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* background-image: url('./assets/man-3915438_1280.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; */
+  text-align: center;
+  height: 100vh;
+}
+
+.top {
+  padding: 50px 20px;
+}
+
+.top>h1 {
+  font-size: 50px;
+  color: #fbb034;
+  text-shadow: 1px 5px rgba(0, 0, 0.10);
+}
+
+.top>input {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #fbb034;
+  color: red;
+  font-size: 20px;
+}
+
+.top>input::placeholder {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.city {
+  font-size: 30px;
+  margin-top: 10px;
+  text-shadow: 1px 1px rgba(0, 0, 0.8);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.desc {
+  font-size: 25px;
+  margin-top: 10px;
+  text-shadow: 1px 1px rgba(0, 0, 0.8);
+  margin-bottom: 10px;
+}
+
+;
+
+.minMax {
+  font-size: 24px;
+  text-shadow: 1px 3px rgba(0, 0, 0.9);
+}
+
+.getir {
+  margin-top: 30px;
+  background-color: #fbb034;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.getir:hover {
+  background-color: #d18f00;
+}
+
+.mapContainer {
+  width: 100%;
+  height: 500px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+}
+video{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
